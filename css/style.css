@@ -1,0 +1,25 @@
+div.header {
+  width:100%;
+  padding: 20px;
+  text-align:center;
+}
+
+img.main-logo {
+  width:100%;
+  max-width:800px;
+}
+
+div.divider {
+  width:100%;
+  padding:8px;
+  font-size:1.2em;
+  text-align:center;
+  background-color:#000000;
+  color:white;
+}
+div.divider.divider-maroon {
+  background-color:#800000;
+}
+div.divider.divider-navy {
+  background-color:#00062c;
+}
