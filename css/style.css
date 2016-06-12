@@ -119,3 +119,16 @@ div.content {
 div.socialdate {
   font-size:0.8em;
 }
+
+i.fa.c-tumblr {
+  color: #35465c;
+}
+i.fa.c-youtube {
+  color: #cd201f;
+}
+i.fa.c-facebook {
+  color: #3b5998;
+}
+i.fa.c-twitter {
+  color: #55acee;
+}

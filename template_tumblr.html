@@ -19,7 +19,7 @@
                         <div class="box-footer text-muted socialdate">
                             <div class="pull-right text-right">
                                 Posted <a href="{{::item.post_url}}" target="_blank"><span am-time-ago="{{::item.timestamp}}" title="{{ item.timestamp | date : 'medium'}}"></span></a> 
-                                on <i class="fa fa-{{item.platform}}" aria-hidden="true" title="{{item.platform}}"></i>
+                                on <i class="fa fa-{{item.platform}} c-{{item.platform}}" aria-hidden="true" title="{{item.platform}}"></i>
                                 <!--by <a href="{{::item.blog_link}}" target="_blank">{{::item.blog_name}}</a>-->
                             </div>
                         </div>
@@ -28,5 +28,6 @@
                 </div>
             </div>
         </div>
+        <div><a href="http://awfu-life.tumblr.com/page/2"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Older Posts</a></div>
     </div>
 </div>
