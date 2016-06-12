@@ -20,7 +20,7 @@ angular.module('jtt_aping')
                 {'access_token': '<YOUR_INSTAGRAM_TOKEN>'}
             ],*/
             facebook: [
-                {'access_token': 'EAAOwoVTURc4BANMAvL615TLDZBVDBDxzdkP8CVaOo0xIwYOUyt2X78vGPqiApPkztgMb6ZA6VXYEpSqXM5jNP820tZBDHYt4vcRSQoy3d1UkfYigQlugJZAReife1LZA7KEK0umhpDKKe8cU0acgKFpbuPLdpCa3en2fCR07oWQZDZD'}
+                {'access_token': 'EAAOwoVTURc4BAOYVL6sZBdI1mrAxmTGFicDZCZCnEYNaBVnE1MhJox03Tkpnkhv40uPUzwxfjWmsklXkbvkBSWosomSf9LtE0uY9Q1aZBZCQVNPcGI7fCO5odqv5BbXCDq7bgmlZBpsmj4LLVQwXFYBg4k8Cgc2SQZD'}
             ],
             twitter: [
                 {'bearer_token': 'AAAAAAAAAAAAAAAAAAAAAARsvgAAAAAAhhnti50EiiGiDE5jwvA51ISK6Jk%3DvlV8azogo7fcKmtCbxzNQpl6KjNNZpirVmG2dZSE1GKe36eVkS'}
