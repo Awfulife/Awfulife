@@ -6,7 +6,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/aping-design-default.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Social Feed -->
@@ -32,42 +32,42 @@
 </head>
 <body ng-app="app">
 
-<div class="header">
-  <img class="main-logo" src="img/awfulife-main.png" alt="Awfulife">
-</div>
+  <div class="header">
+    <img class="main-logo" src="img/awfulife-main.png" alt="Awfulife">
+  </div>
 
-<div class="divider divider-maroon">Blog</div>
+  <div class="divider divider-maroon">Blog</div>
 
-<div class="container-flouid">
-    <div style="padding:20px; background-color:#ddd;">
-        <aping
-            template-url="social_template.html"
-            items="1"
-            model="social"
-            order-by="timestamp"
-            order-reverse="true"
-            aping-tumblr="[{'page':'awfu-life'}]"
-        </aping>
-    </div>
-</div>
+  <div class="container-flouid">
+      <div class="content">
+          <aping
+              template-url="template_tumblr.html"
+              items="1"
+              model="social"
+              order-by="timestamp"
+              order-reverse="true"
+              aping-tumblr="[{'page':'awfu-life'}]"
+          </aping>
+      </div>
+  </div>
 
-<div class="divider divider-navy">Social Feed</div>
+  <div class="divider divider-navy">Social Feed</div>
 
-<!--Social Feed-->
-<div class="container-flouid">
-    <div style="padding:20px; background-color:#ddd;">
-        <aping
-            template-url="social_template.html"
-            items="10"
-            model="social"
-            order-by="timestamp"
-            order-reverse="true"
-            aping-youtube="[{'channelId':'UCbgO43nZ59vItR3XpVCGT9A'}]"
-            aping-facebook="[{'page':'awfulife'}]"
-            aping-codebird="[{'user':'awfu_life', 'showAvatar':false}]"
-        </aping>
-    </div>
-</div>
-
+  <!--Social Feed-->
+  <div class="container-flouid">
+      <div class="content">
+          <aping
+              template-url="template_social.html"
+              items="10"
+              model="social"
+              order-by="timestamp"
+              order-reverse="true"
+              aping-youtube="[{'channelId':'UCbgO43nZ59vItR3XpVCGT9A'}]"
+              aping-facebook="[{'page':'awfulife'}]"
+              aping-codebird="[{'user':'awfu_life', 'showAvatar':false}]"
+          </aping>
+      </div>
+  </div>
+  
 </body>
 </html>
