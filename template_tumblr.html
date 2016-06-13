@@ -23,6 +23,7 @@
                           <a href="{{::item.post_url}}" target="_blank">
                             <span am-time-ago="{{::item.timestamp}}" title="{{ item.timestamp | date : 'medium'}}"></span>
                           </a>
+                          via <i class="fa fa-{{item.platform}} c-{{item.platform}}" aria-hidden="true" title="{{item.platform}}"></i>
                         </small>
                       </p>
                     </div>
