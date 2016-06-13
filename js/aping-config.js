@@ -5,7 +5,7 @@ angular.module('jtt_aping')
 
     $provide.value("apingDefaultSettings", {
         templateUrl: "./social_template.html",
-        items: 20, //items per request
+        items: 100, //items per request
         maxItems: 100, //max items per aping
         orderBy: "timestamp",
         orderReverse: "true",

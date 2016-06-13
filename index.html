@@ -28,6 +28,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/angular-timeline.css">
+    <link rel="stylesheet" href="css/angular-timeline-animations.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Social Feed -->
@@ -42,6 +44,7 @@
     <script src="js/lib/aping-plugin-codebird.min.js"></script>
     <script src="js/lib/aping-plugin-tumblr.min.js"></script>
 
+    <script src="js/lib/angular-timeline.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-sanitize.min.js"></script>
     <script src="//cdn.jsdelivr.net/angular.masonry-packed/0.14.5/angular-masonry-packed.min.js"></script>
     <script src="//cdn.jsdelivr.net/angular.linkify/1.2.0/angular-linkify.min.js"></script>
@@ -57,13 +60,13 @@
     <img class="main-logo" src="img/awfulife-main.png" alt="Awfulife">
   </div>
 
-  <div class="divider divider-maroon">Blog</div>
+  <div class="divider divider-maroon">Recent Posts</div>
 
   <div class="container-flouid">
       <div class="content">
           <aping
               template-url="template_tumblr.html"
-              items="3"
+              items="5"
               model="social"
               order-by="timestamp"
               order-reverse="true"
@@ -79,13 +82,13 @@
       <div class="content">
           <aping
               template-url="template_social.html"
-              items="10"
+              items="100"
               model="social"
               order-by="timestamp"
               order-reverse="true"
               aping-youtube="[{'channelId':'UCbgO43nZ59vItR3XpVCGT9A'}]"
               aping-facebook="[{'page':'awfulife'}]"
-              aping-codebird="[{'user':'awfu_life', 'showAvatar':false}]"
+              aping-codebird="[{'user':'awfu_life', 'showAvatar':false, 'exclude_replies': true, 'include_rts': true}]"
           </aping>
       </div>
   </div>

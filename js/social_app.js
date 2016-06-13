@@ -4,5 +4,6 @@ var app = angular.module('app', [
     'jtt_aping_facebook',
     'jtt_aping_codebird',
     'jtt_aping_tumblr',
-    'jtt_aping_design_default'
+    'jtt_aping_design_default',
+    'angular-timeline'
 ]);

@@ -1,32 +1,42 @@
 <div class="aping-design-default aping-design-default-social">
     <div ng-controller="apingDefaultDesignController">
         <div data-images-loaded masonry class="row" preserve-order reload-on-show>
-            <div class="masonry-brick col-lg-6 col-sm-6 col-xs-12" ng-repeat="item in results" ng-cloak>
-                <div class="box">
-                    <div class="box-header" ng-if="item.img_url">
-                        <a ng-href="{{::item.post_url}}" target="_blank" class="aping-picture-link"><img
-                                ng-src="{{::item.img_url}}" class="main-image img-responsive" alt=""></a>
-                    </div>
-                    <div class="box-content">
-                        <h4 class="" ng-if="item.caption">{{::item.caption}}</h4>
+            <timeline>
+              <timeline-event ng-repeat="item in results" side="alternate">
+                
+                <a href="{{::item.blog_link}}" target="_blank">
+                  <timeline-badge class="{{item.platform}} timeline-hidden"
+                                  when-visible="animateElementIn" when-not-visible="animateElementOut">
+                    <i class="fa fa-{{item.platform}}" aria-hidden="true" title="{{item.platform}}"></i>
+                  </timeline-badge>
+                </a>
 
-                        <div class="" ng-if="item.text" linkify>
-                            {{::item.text | limitTo: 250}}{{::item.text.length > 250 ? '...' : ''}}
-                        </div>
+                <!-- uses angular-scroll-animate to give it some pop -->
+                <timeline-panel class="{{item.platform}} timeline-hidden" when-visible="animateElementIn" when-not-visible="animateElementOut">
+                  <div class="timeline-img" ng-if="item.img_url">
+                      <a ng-href="{{::item.post_url}}" target="_blank" class="aping-picture-link"><img
+                              ng-src="{{::item.img_url}}" class="main-image img-responsive" alt=""></a>
+                  </div>
+                  <div class="timeline-content">
+                    <timeline-heading>
+                      
+                      <h4 class="" ng-if="item.caption">{{::item.caption}}</h4>
+                      
+                      <div class="clearfix"><br></div>
+                    </timeline-heading>
+                    
+                    <p class="" ng-if="item.text" linkify>
+                        {{::item.text | limitTo: 250}}{{::item.text.length > 250 ? '...' : ''}}
+                    </p>
 
-                        <div class="clearfix"><br></div>
-
-                        <div class="box-footer text-muted socialdate">
-                            <div class="pull-right text-right">
-                                Posted <a href="{{::item.post_url}}" target="_blank"><span am-time-ago="{{::item.timestamp}}" title="{{ item.timestamp | date : 'medium'}}"></span></a> 
-                                on <i class="fa fa-{{item.platform}} c-{{item.platform}}" aria-hidden="true" title="{{item.platform}}"></i>
-                                <!--by <a href="{{::item.blog_link}}" target="_blank">{{::item.blog_name}}</a>-->
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
+                    <p>
+                      <small class="text-muted pull-right text-right"><i class="fa fa-clock-o" aria-hidden="true" alt="Posted"></i> <a href="{{::item.post_url}}" target="_blank"><span am-time-ago="{{::item.timestamp}}" title="{{ item.timestamp | date : 'medium'}}"></span></a></small>
+                    </p>
+                    <div class="clearfix"><br></div>
+                  </timeine-panel>
                 </div>
-            </div>
+              </timeline-event>
+            </timeline>
         </div>
     </div>
 </div>

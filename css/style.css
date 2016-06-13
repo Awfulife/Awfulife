@@ -116,9 +116,9 @@ div.content {
   padding: 20px;
   margin:auto;
 }
-div.socialdate {
+/*div.socialdate {
   font-size:0.8em;
-}
+}*/
 
 i.fa.c-tumblr {
   color: #35465c;
@@ -131,4 +131,22 @@ i.fa.c-facebook {
 }
 i.fa.c-twitter {
   color: #55acee;
+}
+.timeline li timeline-badge.tumblr{
+  background-color: #35465c;
+}
+.timeline li timeline-badge.youtube{
+  background-color: #cd201f;
+}
+.timeline li timeline-badge.facebook{
+  background-color: #3b5998;
+}
+.timeline li timeline-badge.twitter{
+  background-color: #55acee;
+}
+.timeline li timeline-panel {
+  padding:0;
+}
+timeline-panel div.timeline-content {
+  padding:12px;
 }
