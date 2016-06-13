@@ -287,7 +287,7 @@ angular.module('jtt_aping')
          */
         this.getTimestampFromDateString = function (_string, _multiplier, _add) {
             if(_string.length>5 && _string.charAt(_string.length-5) == "+"){
-              _string = _string.substr(0,test.length-4) + test.substr(test.length-4, 2) + ":" + test.substr(test.length-2, 2)
+              _string = _string.substr(0,_string.length-4) + _string.substr(_string.length-4, 2) + ":" + _string.substr(_string.length-2, 2)
             }
             return new Date(_string); //***custom code
             if (angular.isUndefined(_multiplier) || isNaN(_multiplier)) {
