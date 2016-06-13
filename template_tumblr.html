@@ -8,23 +8,26 @@
                                 ng-src="{{::item.img_url}}" class="main-image img-responsive" alt=""></a>
                     </div>
                     <div class="box-content">
-                        <h4 class="" ng-if="item.caption">{{::item.caption}}</h4>
+                      <h4 class="" ng-if="item.caption">{{::item.caption}}</h4>
 
-                        <div class="" ng-if="item.text" linkify>
-                            {{::item.text | limitTo: 250}}{{::item.text.length > 250 ? '...' : ''}}
-                        </div>
+                      <div class="" ng-if="item.text" linkify>
+                          {{::item.text | limitTo: 250}}{{::item.text.length > 250 ? '...' : ''}}
+                          <a ng-if="::item.text.length > 250" href="{{::item.post_url}}">Read more</a>
+                      </div>
 
-                        <div class="clearfix"><br></div>
-
-                        <div class="box-footer text-muted socialdate">
-                            <div class="pull-right text-right">
-                                Posted <a href="{{::item.post_url}}" target="_blank"><span am-time-ago="{{::item.timestamp}}" title="{{ item.timestamp | date : 'medium'}}"></span></a> 
-                                on <i class="fa fa-{{item.platform}} c-{{item.platform}}" aria-hidden="true" title="{{item.platform}}"></i>
-                                <!--by <a href="{{::item.blog_link}}" target="_blank">{{::item.blog_name}}</a>-->
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
+                      <div class="clearfix"><br></div>
+                      
+                      <p>
+                        <small class="text-muted pull-right text-right">
+                          <i class="fa fa-clock-o" aria-hidden="true" alt="Posted"></i> 
+                          <a href="{{::item.post_url}}" target="_blank">
+                            <span am-time-ago="{{::item.timestamp}}" title="{{ item.timestamp | date : 'medium'}}"></span>
+                          </a>
+                        </small>
+                      </p>
                     </div>
+                    
+                    <div class="clearfix"></div>
                 </div>
             </div>
         </div>
