@@ -1,6 +1,5 @@
 <div class="aping-design-default aping-design-default-social">
     <div ng-controller="apingDefaultDesignController">
-        <div data-images-loaded masonry class="row" preserve-order reload-on-show>
             <timeline>
               <timeline-event ng-repeat="item in results" side="alternate">
                 
@@ -22,7 +21,7 @@
                       
                       <h4 class="" ng-if="item.caption">{{::item.caption}}</h4>
                       
-                      <div class="clearfix"><br></div>
+                      <div class="clearfix"></div>
                     </timeline-heading>
                     
                     <p class="" ng-if="item.text" linkify>
@@ -32,11 +31,10 @@
                     <p>
                       <small class="text-muted pull-right text-right"><i class="fa fa-clock-o" aria-hidden="true" alt="Posted"></i> <a href="{{::item.post_url}}" target="_blank"><span am-time-ago="{{::item.timestamp}}" title="{{ item.timestamp | date : 'medium'}}"></span></a></small>
                     </p>
-                    <div class="clearfix"><br></div>
+                    <div class="clearfix"></div>
                   </timeine-panel>
                 </div>
               </timeline-event>
             </timeline>
-        </div>
     </div>
 </div>

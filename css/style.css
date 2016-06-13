@@ -17,7 +17,7 @@
   height: auto   !important;
 }
 .aping-design-default .masonry-brick .box {
-  background-color: white;
+  /*background-color: white;*/
   font-family: Verdana, Geneva, sans-serif;
   -webkit-transition: all 250ms ease;
   -moz-transition: all 250ms ease;
@@ -84,8 +84,11 @@
 
 
 
-
 div.header {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+div.header-logo {
   width:100%;
   padding: 20px;
   text-align:center;
@@ -113,6 +116,14 @@ div.divider.divider-navy {
 div.divider.divider-white {
   color:black;
   background-color:#FFFFFF;
+}
+div.divider.divider-trans {
+  color:black;
+  background-color: transparent;
+}
+div.divider.divider-light {
+  color:black;
+  background: rgba(255, 255, 255, 0.5);
 }
 div.content {
   width:100%;
@@ -188,4 +199,11 @@ div.social-links a.email{
 }
 div.social-links a:hover{
   opacity: 0.8;
+}
+div#wrapper{
+  background: rgba(0, 0, 0, 0.9);
+}
+div.box{
+  /*background: rgba(255, 255, 255, 0.6);*/
+  background-color: #cdcdcd;
 }
