@@ -110,6 +110,10 @@ div.divider.divider-maroon {
 div.divider.divider-navy {
   background-color:#00062c;
 }
+div.divider.divider-white {
+  color:black;
+  background-color:#FFFFFF;
+}
 div.content {
   width:100%;
   max-width:1000px;
@@ -149,4 +153,39 @@ i.fa.c-twitter {
 }
 timeline-panel div.timeline-content {
   padding:12px;
+}
+
+
+div.social-links{
+  width:100%;
+  max-width:800px;
+  margin:auto;
+  text-align:center;
+}
+div.social-links a{
+  font-size:1.3em;
+}
+div.social-links a.tumblr{
+  color: #35465c;
+}
+div.social-links a.youtube{
+  color: #cd201f;
+}
+div.social-links a.facebook{
+  color: #3b5998;
+}
+div.social-links a.twitter{
+  color: #55acee;
+}
+div.social-links a.twitch{
+  color: #6441a5;
+}
+div.social-links a.instagram{
+  color: #405de6;
+}
+div.social-links a.email{
+  color: #777777;
+}
+div.social-links a:hover{
+  opacity: 0.8;
 }
