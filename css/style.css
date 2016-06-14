@@ -197,6 +197,12 @@ div.social-links a.instagram{
 div.social-links a.email{
   color: #777777;
 }
+div.social-links a.deviantart{
+  color: #05cc47;
+}
+div.social-links a.flickr{
+  color: #0063dc;
+}
 div.social-links a:hover{
   opacity: 0.8;
 }
